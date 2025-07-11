@@ -12,8 +12,8 @@ echo -e "[SETUP] Create folders"
 mkdir -p logs tmp www
 
 # Clone the default repository into a temporary directory
-echo "[Git] Cloning default repository 'https://github.com/EL-JAYY/pterodactyl-nginx-egg-npm' into temporary directory."
-git clone https://github.com/EL-JAYY/pterodactyl-nginx-egg-npm /mnt/server/gtemp > /dev/null 2>&1 && echo "[Git] Repository cloned successfully." || { echo "[Git] Error: Default repository clone failed."; exit 21; }
+echo "[Git] Cloning default repository 'https://github.com/KINGIRONMAN2011/pterodactyl-nginx-egg-npm' into temporary directory."
+git clone https://github.com/KINGIRONMAN2011/pterodactyl-nginx-egg-npm /mnt/server/gtemp > /dev/null 2>&1 && echo "[Git] Repository cloned successfully." || { echo "[Git] Error: Default repository clone failed."; exit 21; }
 
 # Copy the www folder and files from the temporary repository to the target directory
 echo "[Git] Copying folder and files from default repository."

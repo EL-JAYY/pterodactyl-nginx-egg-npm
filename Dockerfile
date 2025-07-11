@@ -1,8 +1,9 @@
 FROM debian:bookworm-slim
 
-LABEL author="Ym0t" maintainer="YmoT@tuta.com"
+LABEL author="KingIronMan2011" maintainer="IronMan@king-mc.de"
 
 ARG PHP_VERSION
+ARG NODE_MAJOR
 
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -10,7 +11,9 @@ RUN apt-get update && apt-get install -y \
         curl gnupg2 ca-certificates \
         build-essential python3 pkg-config \
         git apt-transport-https lsb-release wget \
-        nginx nodejs npm \
+        nginx \
+    && curl -fsSL https://deb.nodesource.com/setup_${NODE_MAJOR}.x | bash - \
+    && apt-get install -y nodejs \
     && ARCH=$(uname -m) \
     && if [ "$ARCH" = "x86_64" ]; then \
         wget -O /tmp/cloudflared.deb https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb; \
