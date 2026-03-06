@@ -10,12 +10,10 @@ Pterodactyl Nginx web server egg with PHP8.x, Wordpress, Git, Composer & Cloudfl
   🔹 **Cloudflare Tunnel**: Background tunnel with token validation, PID & log monitoring  
   🔹 **PHP-NGINX Startup**: Auto-detects PHP-FPM version; runs NGINX in the foreground  
   🔹 **Multi-Arch Support**: Works on AMD64 & ARM64 images  
-  🔹 **Selectable PHP Versions**:  
+  🔹 **Selectable PHP Versions**:
   - ✅ 8.4  
-  - ✅ 8.3  
-  - ☑️ 8.2 [security-only]  
-  - ☑️ 8.1 [security-only]  
-  - ❌ 8.0 [EOL] 
+  - ✅ 8.4  
+  - ☑️ 8.3 [security-only]
 
 [PHP supported versions](https://www.php.net/supported-versions.php)
 <br><br>
