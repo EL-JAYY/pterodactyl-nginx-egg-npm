@@ -11,10 +11,8 @@
     "features": null,
     "docker_images": {
         "ghcr.io\/el-jayy\/pterodactyl-nginx-egg-npm:8.4-latest": "ghcr.io\/el-jayy\/pterodactyl-nginx-egg-npm:8.4-latest",
-        "ghcr.io\/el-jayy\/pterodactyl-nginx-egg-npm:8.3-latest": "ghcr.io\/el-jayy\/pterodactyl-nginx-egg-npm:8.3-latest",
-        "ghcr.io\/el-jayy\/pterodactyl-nginx-egg-npm:8.2-latest": "ghcr.io\/el-jayy\/pterodactyl-nginx-egg-npm:8.2-latest",
-        "ghcr.io\/el-jayy\/pterodactyl-nginx-egg-npm:8.1-latest": "ghcr.io\/el-jayy\/pterodactyl-nginx-egg-npm:8.1-latest",
-        "ghcr.io\/el-jayy\/pterodactyl-nginx-egg-npm:8.0-latest": "ghcr.io\/el-jayy\/pterodactyl-nginx-egg-npm:8.0-latest"
+        "ghcr.io\/el-jayy\/pterodactyl-nginx-egg-npm:8.4-latest": "ghcr.io\/el-jayy\/pterodactyl-nginx-egg-npm:8.4-latest",
+        "ghcr.io\/el-jayy\/pterodactyl-nginx-egg-npm:8.3-latest": "ghcr.io\/el-jayy\/pterodactyl-nginx-egg-npm:8.3-latest"
     },
     "file_denylist": [],
     "startup": ".\/start-modules.sh",
@@ -85,7 +83,7 @@
         {
             "name": "Git Branch",
             "description": "What branch to pull from github.\r\n\r\nDefault is blank to pull the repo default branch",
-            "env_variable": "BRANCH",
+            "env_variable": "GIT_BRANCH",
             "default_value": "",
             "user_viewable": true,
             "user_editable": true,
@@ -96,16 +94,6 @@
             "name": "Git Username",
             "description": "Username to auth with git.",
             "env_variable": "USERNAME",
-            "default_value": "",
-            "user_viewable": true,
-            "user_editable": true,
-            "rules": "nullable|string",
-            "field_type": "text"
-        },
-        {
-            "name": "Git Access Token",
-            "description": "Password to use with git.\r\n\r\nIt's best practice to use a Personal Access Token.\r\nhttps:\/\/github.com\/settings\/tokens\r\nhttps:\/\/gitlab.com\/-\/profile\/personal_access_tokens",
-            "env_variable": "ACCESS_TOKEN",
             "default_value": "",
             "user_viewable": true,
             "user_editable": true,
